@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-  
+    
   <ItemGroup>
-    <Compile Include="..\EquivalentValueType.cs" />
+    <ProjectReference Include="..\pia\pia.csproj">
+    <EmbedInteropTypes>True</EmbedInteropTypes>
+</ProjectReference> 
   </ItemGroup>
 
 </Project>
